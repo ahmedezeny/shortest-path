@@ -1,22 +1,26 @@
 package eg.edu.alexu.csd.filestructure.graphs;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Graph implements IGraph {
 
+     Graph() {
+        v = 0;
+        e = 0;
+    }
+
     class edge{
         int to;
         int cost;
-        public edge(int to,int cost){
+         edge(int to,int cost){
             this.to=to;
             this.cost=cost;
         }
     }
 
-    ArrayList<edge>[] adj;
-    int v=0,e=0;
+    private ArrayList<edge>[] adj;
+    private int v,e;
     @Override
     public void readGraph(File file) {
 
@@ -48,6 +52,7 @@ public class Graph implements IGraph {
     @Override
     public int size() {
         int count=0;
+
         for(int i=0;i<adj.length;i++){
             if(adj[i].size()>0)
                 count++;

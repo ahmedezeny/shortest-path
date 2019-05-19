@@ -8,7 +8,7 @@ public class main {
         Graph g=new Graph();
         g.readGraph(new File("D:\\Study\\2nd semester\\Data structure II\\Graph\\res\\graph_5_5.txt"));
         ArrayList<Integer> a=g.getVertices();
-        int d[] = new int[g.v];
+        int d[] = new int[5];
         boolean bb= g.runBellmanFord(0,d);
         
     }
