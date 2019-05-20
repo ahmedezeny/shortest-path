@@ -5,45 +5,46 @@ import java.util.ArrayList;
 
 public class Graph implements IGraph {
 
-     Graph() {
+    Graph() {
         v = 0;
         e = 0;
     }
 
-    class edge{
+    class edge {
         int to;
         int cost;
-         edge(int to,int cost){
-            this.to=to;
-            this.cost=cost;
+
+        edge(int to, int cost) {
+            this.to = to;
+            this.cost = cost;
         }
     }
 
     private ArrayList<edge>[] adj;
-    private int v,e;
+    private int v, e;
+    private ArrayList<Integer> djk;
+
     @Override
     public void readGraph(File file) {
-
+        if (!file.exists()) return;
         try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
+            FileReader fileReader = new FileReader(file);
+            BufferedReader br = new BufferedReader(fileReader);
             String[] dummy;
-            dummy= br.readLine().split("\\s");
-            v=Integer.parseInt(dummy[0]);
-            e=Integer.parseInt(dummy[1]);
-            adj = new ArrayList[ v];
+            dummy = br.readLine().split("\\s");
+            v = Integer.parseInt(dummy[0]);
+            e = Integer.parseInt(dummy[1]);
+            adj = new ArrayList[v];
             for (int i = 0; i < v; i++) {
-                adj[i] = new ArrayList<edge>();
+                adj[i] = new ArrayList<>();
             }
-            for (int i =0;i<e;i++){
-                dummy= br.readLine().split("\\s");
-                edge ed=new edge(Integer.parseInt(dummy[1]),Integer.parseInt(dummy[2]));
+            for (int i = 0; i < e; i++) {
+                dummy = br.readLine().split("\\s");
+                edge ed = new edge(Integer.parseInt(dummy[1]), Integer.parseInt(dummy[2]));
                 adj[Integer.parseInt(dummy[0])].add(ed);
             }
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
         }
 
 
@@ -51,10 +52,10 @@ public class Graph implements IGraph {
 
     @Override
     public int size() {
-        int count=0;
+        int count = 0;
 
-        for(int i=0;i<adj.length;i++){
-            if(adj[i].size()>0)
+        for (ArrayList<edge> anAdj : adj) {
+            if (anAdj.size() > 0)
                 count++;
         }
         return count;
@@ -62,9 +63,9 @@ public class Graph implements IGraph {
 
     @Override
     public ArrayList<Integer> getVertices() {
-        ArrayList<Integer> a=new ArrayList<Integer>(adj.length);
-        for(int i=0;i<adj.length;i++){
-            if(adj[i].size()>0)
+        ArrayList<Integer> a = new ArrayList<>(adj.length);
+        for (int i = 0; i < adj.length; i++) {
+            if (adj[i].size() > 0)
                 a.add(i);
         }
         return a;
@@ -72,8 +73,8 @@ public class Graph implements IGraph {
 
     @Override
     public ArrayList<Integer> getNeighbors(int v) {
-        ArrayList<Integer> a=new ArrayList<Integer>(adj[v].size());
-        for(int i=0;i<adj[v].size();i++){
+        ArrayList<Integer> a = new ArrayList<>(adj[v].size());
+        for (int i = 0; i < adj[v].size(); i++) {
             a.add(adj[v].get(i).to);
         }
         return a;
@@ -82,30 +83,71 @@ public class Graph implements IGraph {
     @Override
     public void runDijkstra(int src, int[] distances) {
 
+        Boolean sptSet[] = new Boolean[v];
+
+        for (int i = 0; i < v; i++) {
+            distances[i] = Integer.MAX_VALUE/2;
+            sptSet[i] = false;
+        }
+
+        distances[src] = 0;
+        djk = new ArrayList<>();
+        for (int count = 0; count < v - 1; count++) {
+            int u = findMin(distances, sptSet);
+            djk.add(u);
+            sptSet[u] = true;
+
+            for (int vv = 0; vv < v; vv++) {
+                int uv = findEdge(u, vv);
+                if (!sptSet[vv] && uv != 0 && distances[u] != Integer.MAX_VALUE && distances[u] + uv < distances[vv])
+                    distances[vv] = distances[u] + uv;
+            }
+        }
+        djk.add(findMin(distances, sptSet));
+    }
+
+    private int findEdge(int u, int v) {
+        for (edge e : adj[u]) {
+            if (e.to == v) return e.cost;
+        }
+        return 0;
+    }
+
+    private int findMin(int[] distances, Boolean[] sptSet) {
+
+        int min = Integer.MAX_VALUE, min_index = -1;
+
+        for (int vv = 0; vv < v; vv++)
+            if (!sptSet[vv] && distances[vv] <= min) {
+                min = distances[vv];
+                min_index = vv;
+            }
+
+        return min_index;
     }
 
     @Override
     public ArrayList<Integer> getDijkstraProcessedOrder() {
-        return null;
+        return djk;
     }
 
     @Override
     public boolean runBellmanFord(int src, int[] distances) {
-        distances= new int[v];
+        distances = new int[v];
         java.util.Arrays.fill(distances, Integer.MAX_VALUE);
-        distances[src]=0;
+        distances[src] = 0;
 
-        for(int i=0;i<v-1;i++)
-            for(int ii=0;ii<adj.length;ii++)
-                for(int iii=0;iii<adj[ii].size();iii++)
-                    if(distances[ii]+adj[ii].get(iii).cost<distances[adj[ii].get(iii).to])
-                        distances[adj[ii].get(iii).to]=distances[ii]+adj[ii].get(iii).cost;
+        for (int i = 0; i < v - 1; i++)
+            for (int ii = 0; ii < adj.length; ii++)
+                for (int iii = 0; iii < adj[ii].size(); iii++)
+                    if (distances[ii] + adj[ii].get(iii).cost < distances[adj[ii].get(iii).to])
+                        distances[adj[ii].get(iii).to] = distances[ii] + adj[ii].get(iii).cost;
 
-        for(int i=0;i<v-1;i++)
-            for(int ii=0;ii<adj.length;ii++)
-                for(int iii=0;iii<adj[ii].size();iii++)
-                    if(distances[ii]+adj[ii].get(iii).cost<distances[adj[ii].get(iii).to])
-                       return false;
+        for (int i = 0; i < v - 1; i++)
+            for (int ii = 0; ii < adj.length; ii++)
+                for (int iii = 0; iii < adj[ii].size(); iii++)
+                    if (distances[ii] + adj[ii].get(iii).cost < distances[adj[ii].get(iii).to])
+                        return false;
 
         return true;
     }
