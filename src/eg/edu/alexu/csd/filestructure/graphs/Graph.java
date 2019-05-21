@@ -29,30 +29,36 @@ public class Graph implements IGraph {
     public void readGraph(File file) {
 
         try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader br = new BufferedReader(fileReader);
+            //FileReader fileReader = new FileReader(file);
+            FileInputStream fstream = new FileInputStream(file);
+            DataInputStream in = new DataInputStream(fstream);
+            BufferedReader br = new BufferedReader(new InputStreamReader(in));
             String[] dummy;
-            dummy = br.readLine().split("\\s");
+            dummy = br.readLine().split(" ");
             v = Integer.parseInt(dummy[0]);
             e = Integer.parseInt(dummy[1]);
             adj = new ArrayList[v];
             for (int i = 0; i < v; i++) {
                 adj[i] = new ArrayList<>();
             }
-            for (int i = 0; i < e; i++) {
-
-                String s=br.readLine().trim();
+            String s="";
+            int i;
+            for (i = 0; (s = br.readLine()) != null; i++) {
+                if(i>e){
+                    throw new RuntimeErrorException(new Error());
+                }
+                //String s=br.readLine().trim();
                 if(s.isEmpty()){
                     throw new RuntimeErrorException(new Error());
                 }
-
-
-
                 dummy = s.split(" ");
                 edge ed = new edge(Integer.parseInt(dummy[1]), Integer.parseInt(dummy[2]));
                 if(adj[Integer.parseInt(dummy[0])].isEmpty())
                     adj[Integer.parseInt(dummy[0])]= new ArrayList<>();
                 adj[Integer.parseInt(dummy[0])].add(ed);
+            }
+            if(i<e){
+                throw new RuntimeErrorException(new Error());
             }
 
         } catch(FileNotFoundException exception)
@@ -60,6 +66,7 @@ public class Graph implements IGraph {
             System.out.println("The file " + file.getPath() + " was not found.");
             throw new RuntimeErrorException(new Error());
         }catch (Exception e) {
+            throw new RuntimeErrorException(new Error());
         }
 
 
