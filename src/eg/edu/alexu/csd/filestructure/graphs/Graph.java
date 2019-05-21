@@ -1,5 +1,6 @@
 package eg.edu.alexu.csd.filestructure.graphs;
 
+import javax.management.RuntimeErrorException;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -26,7 +27,7 @@ public class Graph implements IGraph {
 
     @Override
     public void readGraph(File file) {
-        if (!file.exists()) return;
+
         try {
             FileReader fileReader = new FileReader(file);
             BufferedReader br = new BufferedReader(fileReader);
@@ -39,12 +40,26 @@ public class Graph implements IGraph {
                 adj[i] = new ArrayList<>();
             }
             for (int i = 0; i < e; i++) {
-                dummy = br.readLine().split("\\s");
+
+                String s=br.readLine().trim();
+                if(s.isEmpty()){
+                    throw new RuntimeErrorException(new Error());
+                }
+
+
+
+                dummy = s.split(" ");
                 edge ed = new edge(Integer.parseInt(dummy[1]), Integer.parseInt(dummy[2]));
+                if(adj[Integer.parseInt(dummy[0])].isEmpty())
+                    adj[Integer.parseInt(dummy[0])]= new ArrayList<>();
                 adj[Integer.parseInt(dummy[0])].add(ed);
             }
 
-        } catch (Exception e) {
+        } catch(FileNotFoundException exception)
+        {
+            System.out.println("The file " + file.getPath() + " was not found.");
+            throw new RuntimeErrorException(new Error());
+        }catch (Exception e) {
         }
 
 
@@ -56,7 +71,7 @@ public class Graph implements IGraph {
 
         for (ArrayList<edge> anAdj : adj) {
             if (anAdj.size() > 0)
-                count++;
+                count+=anAdj.size();
         }
         return count;
     }
@@ -65,7 +80,8 @@ public class Graph implements IGraph {
     public ArrayList<Integer> getVertices() {
         ArrayList<Integer> a = new ArrayList<>(adj.length);
         for (int i = 0; i < adj.length; i++) {
-            if (adj[i].size() > 0)
+
+
                 a.add(i);
         }
         return a;
@@ -133,10 +149,12 @@ public class Graph implements IGraph {
 
     @Override
     public boolean runBellmanFord(int src, int[] distances) {
-        distances = new int[v];
-        java.util.Arrays.fill(distances, Integer.MAX_VALUE);
-        distances[src] = 0;
+     //   java.util.Arrays.fill(distances, Integer.MAX_VALUE);
 
+        for (int i = 0; i < distances.length; i++) {
+            distances[i] = Integer.MAX_VALUE/2;
+        }
+        distances[src] = 0;
         for (int i = 0; i < v - 1; i++)
             for (int ii = 0; ii < adj.length; ii++)
                 for (int iii = 0; iii < adj[ii].size(); iii++)
@@ -148,6 +166,8 @@ public class Graph implements IGraph {
                 for (int iii = 0; iii < adj[ii].size(); iii++)
                     if (distances[ii] + adj[ii].get(iii).cost < distances[adj[ii].get(iii).to])
                         return false;
+
+
 
         return true;
     }

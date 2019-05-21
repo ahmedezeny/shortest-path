@@ -5,12 +5,14 @@ import java.util.ArrayList;
 
 public class main {
     public static void main(String[] args) {
-        Graph g=new Graph();
-        g.readGraph(new File("D:\\Study\\2nd semester\\Data structure II\\Graph\\res\\graph_5_5.txt"));
+        IGraph g=new Graph();
+        g.readGraph(new File("D:\\Study\\2nd semester\\Data structure II\\Graph\\res\\graph_500_250.txt"));
         ArrayList<Integer> a=g.getVertices();
-        int d[] = new int[5];
+        int d[] = new int[500];
         boolean bb= g.runBellmanFord(0,d);
-        
+        int n=g.size();
+        int[] testGraphsVertices = new int[] { 5, 9, 6, 8};
+        //testGraphsVertices=g.getVertices();
     }
 
 }

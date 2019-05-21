@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c51ecadc-ea7d-4f29-8855-a25c885aac5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a9b1ba00-e693-4d70-aef8-332f349ef4fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Graph.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Graph.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/Graph$edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/Graph$edge.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/IGraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/IGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/GraphUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/GraphUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/IntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/IntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/MainTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/MainTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/ReflectionHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/ReflectionHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,90 +24,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-860421226">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="4" />
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="7" />
-          <entry key="txt" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="7" />
-          <entry key="PLAIN_TEXT" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="gitignore" value="15" />
-          <entry key="java" value="443" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="443" />
-          <entry key="PLAIN_TEXT" value="15" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Graph" />
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#3302#3303#0" expanded="true" />
-                <element signature="e#3368#3369#0" expanded="true" />
-                <element signature="e#3433#3434#0" expanded="true" />
-                <element signature="e#3500#3501#0" expanded="true" />
-                <element signature="e#3565#3566#0" expanded="true" />
-                <element signature="e#3632#3633#0" expanded="true" />
-                <element signature="e#3697#3698#0" expanded="true" />
-                <element signature="e#3764#3765#0" expanded="true" />
-                <element signature="e#3832#3833#0" expanded="true" />
-                <element signature="e#3895#3896#0" expanded="true" />
-                <element signature="e#3963#3964#0" expanded="true" />
-                <element signature="e#4026#4027#0" expanded="true" />
-                <element signature="e#4094#4095#0" expanded="true" />
-                <element signature="e#4157#4158#0" expanded="true" />
-                <element signature="e#4225#4226#0" expanded="true" />
-                <element signature="e#4288#4289#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/res/graph_extra.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/solution/graph_500_250.txt">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/IGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="2" selection-end-column="12" />
+            <state relative-caret-position="68">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -108,123 +46,125 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            <state relative-caret-position="221">
+              <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding>
-                <element signature="e#3345#3346#0" expanded="true" />
-                <element signature="e#3372#3373#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#3336#3337#0" expanded="true" />
+                <element signature="e#3362#3363#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/IGraph.java">
+        <entry file="file://$PROJECT_DIR$/res/graph_5_5.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="12" selection-start-line="12" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/IntegrationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/graph_500_250.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>dist</find>
-      <find>distances.length</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>distances</replace>
-      <replace>v</replace>
-    </replaceStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java" />
         <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/IntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
-  </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State />
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>Android</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1615" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Graph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shortest-path" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Graph" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shortest-path" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Graph" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="graphs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558389223888" />
-    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/" />
+    <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
-    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -238,9 +178,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UnitTest.testInvalidGraph">
-    <configuration name="MainTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.MainTester" />
+  <component name="RunManager" selected="JUnit.IntegrationTest">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.main" />
+      <module name="Graph" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eg.edu.alexu.csd.filestructure.graphs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graph" />
       <extension name="coverage">
         <pattern>
@@ -248,6 +200,25 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test" />
+      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.IntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.testCreationHeap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Graph" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eg.edu.alexu.csd.filestructure.graphs.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test" />
+      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.IntegrationTest" />
+      <option name="METHOD_NAME" value="testCreationHeap" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,11 +233,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test" />
       <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.UnitTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTest.testDijkstra1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="eg.edu.alexu.csd.filestructure.graphs.test in Graph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Graph" />
       <extension name="coverage">
         <pattern>
@@ -275,59 +247,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test" />
-      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.UnitTest" />
-      <option name="METHOD_NAME" value="testDijkstra1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UnitTest.testDijkstra3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graph" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eg.edu.alexu.csd.filestructure.graphs.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test" />
-      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.UnitTest" />
-      <option name="METHOD_NAME" value="testDijkstra3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UnitTest.testInvalidGraph" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Graph" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eg.edu.alexu.csd.filestructure.graphs.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test" />
-      <option name="MAIN_CLASS_NAME" value="eg.edu.alexu.csd.filestructure.graphs.test.UnitTest" />
-      <option name="METHOD_NAME" value="testInvalidGraph" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.MainTester" />
-      <item itemvalue="JUnit.UnitTest" />
-      <item itemvalue="JUnit.UnitTest.testDijkstra1" />
-      <item itemvalue="JUnit.UnitTest.testDijkstra3" />
-      <item itemvalue="JUnit.UnitTest.testInvalidGraph" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UnitTest.testInvalidGraph" />
+        <item itemvalue="JUnit.IntegrationTest" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.IntegrationTest.testCreationHeap" />
+        <item itemvalue="JUnit.eg.edu.alexu.csd.filestructure.graphs.test in Graph" />
         <item itemvalue="JUnit.UnitTest" />
-        <item itemvalue="JUnit.UnitTest.testDijkstra3" />
-        <item itemvalue="JUnit.UnitTest.testDijkstra1" />
-        <item itemvalue="Application.MainTester" />
       </list>
     </recent_temporary>
   </component>
@@ -336,275 +267,225 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c51ecadc-ea7d-4f29-8855-a25c885aac5e" name="Default Changelist" comment="" />
-      <created>1558384241630</created>
+      <changelist id="a9b1ba00-e693-4d70-aef8-332f349ef4fc" name="Default Changelist" comment="" />
+      <created>1558048049120</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558384241630</updated>
-      <workItem from="1558384252013" duration="4976000" />
+      <updated>1558048049120</updated>
+      <workItem from="1558048053592" duration="1678000" />
+      <workItem from="1558084798467" duration="13902000" />
+      <workItem from="1558263649422" duration="1161000" />
+      <workItem from="1558390257398" duration="6711000" />
     </task>
+    <task id="LOCAL-00001" summary="inhance">
+      <created>1558264207414</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558264207414</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UnitTest_testDijkstra3 - 2019.05.20 at 23h 47m 49s.xml">
-      <configuration name="UnitTest.testDijkstra3" configurationId="JUnit" />
+    <history-entry file="eg_edu_alexu_csd_filestructure_graphs_test_in_Graph - 2019.05.21 at 00h 28m 16s.xml">
+      <configuration name="eg.edu.alexu.csd.filestructure.graphs.test in Graph" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest - 2019.05.20 at 23h 48m 04s.xml">
-      <configuration name="UnitTest" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 31m 42s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest - 2019.05.20 at 23h 48m 23s.xml">
-      <configuration name="UnitTest" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 32m 55s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 49m 12s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 33m 08s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 49m 54s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 36m 53s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 51m 50s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 44m 17s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 52m 06s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 44m 36s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 52m 41s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 00h 58m 32s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 53m 42s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest_testCreationHeap - 2019.05.21 at 01h 32m 44s.xml">
+      <configuration name="IntegrationTest.testCreationHeap" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UnitTest_testInvalidGraph - 2019.05.20 at 23h 53m 46s.xml">
-      <configuration name="UnitTest.testInvalidGraph" configurationId="JUnit" />
+    <history-entry file="IntegrationTest - 2019.05.21 at 04h 35m 51s.xml">
+      <configuration name="IntegrationTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4976000" />
+    <option name="totallyTimeSpent" value="23452000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Structure" order="2" sideWeight="0.5020161" side_tool="true" weight="0.1913767" />
-      <window_info id="Favorites" order="3" sideWeight="0.50163937" side_tool="true" weight="0.1913767" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.49798387" visible="true" weight="0.1913767" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14899328" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24590164" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3590164" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3937677" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Flutter Inspector" />
-      <window_info anchor="right" id="Flutter Outline" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="inhance" />
+    <option name="LAST_COMMIT_MESSAGE" value="inhance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java</url>
-          <line>94</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/GraphUtil.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java</url>
+          <line>7</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java</url>
-          <line>104</line>
+          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/IntegrationTest.java</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>2147483647/2</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>djk</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>djk.get(500)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>djk[500]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>distances[src]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="adj" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/res/graph_50_25.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/graph_1250_625.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/solution/graph_5_5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/solution/graph_50_25.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/solution/graph_500_250.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/MainTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/graph_extra.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/solution/graph_5_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/solution/dijkstra_order/graph_5_5.txt">
+    <entry file="file://$PROJECT_DIR$/res/graph_5_5.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/graph_5_5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/graph_500_250.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="8" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="133">
+          <caret line="762" selection-start-line="762" selection-end-line="762" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/GraphUtil.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/solution/graph_500_250.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/IGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="133">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="238">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/graph_incomplete.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java">
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/IGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="e#3345#3346#0" expanded="true" />
-            <element signature="e#3372#3373#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/ReflectionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/IntegrationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/test/UnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="102">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="34" lean-forward="true" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
-            <element signature="e#3302#3303#0" expanded="true" />
-            <element signature="e#3368#3369#0" expanded="true" />
-            <element signature="e#3433#3434#0" expanded="true" />
-            <element signature="e#3500#3501#0" expanded="true" />
-            <element signature="e#3565#3566#0" expanded="true" />
-            <element signature="e#3632#3633#0" expanded="true" />
-            <element signature="e#3697#3698#0" expanded="true" />
-            <element signature="e#3764#3765#0" expanded="true" />
-            <element signature="e#3832#3833#0" expanded="true" />
-            <element signature="e#3895#3896#0" expanded="true" />
-            <element signature="e#3963#3964#0" expanded="true" />
-            <element signature="e#4026#4027#0" expanded="true" />
-            <element signature="e#4094#4095#0" expanded="true" />
-            <element signature="e#4157#4158#0" expanded="true" />
-            <element signature="e#4225#4226#0" expanded="true" />
-            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#3336#3337#0" expanded="true" />
+            <element signature="e#3362#3363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eg/edu/alexu/csd/filestructure/graphs/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -626,7 +507,6 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -649,7 +529,6 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -661,7 +540,6 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Graph</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -685,7 +563,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>hamcrest-core-1.3</last-edited>
+          <last-edited>junit-4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
