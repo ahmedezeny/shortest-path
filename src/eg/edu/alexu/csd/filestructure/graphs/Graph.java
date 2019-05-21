@@ -29,7 +29,6 @@ public class Graph implements IGraph {
     public void readGraph(File file) {
 
         try {
-            //FileReader fileReader = new FileReader(file);
             FileInputStream fstream = new FileInputStream(file);
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader br = new BufferedReader(new InputStreamReader(in));
@@ -41,31 +40,30 @@ public class Graph implements IGraph {
             for (int i = 0; i < v; i++) {
                 adj[i] = new ArrayList<>();
             }
-            String s="";
+            String s;
             int i;
             for (i = 0; (s = br.readLine()) != null; i++) {
-                if(i>e){
+                if (i > e) {
                     throw new RuntimeErrorException(new Error());
                 }
                 //String s=br.readLine().trim();
-                if(s.isEmpty()){
+                if (s.isEmpty()) {
                     throw new RuntimeErrorException(new Error());
                 }
                 dummy = s.split(" ");
                 edge ed = new edge(Integer.parseInt(dummy[1]), Integer.parseInt(dummy[2]));
-                if(adj[Integer.parseInt(dummy[0])].isEmpty())
-                    adj[Integer.parseInt(dummy[0])]= new ArrayList<>();
+                if (adj[Integer.parseInt(dummy[0])].isEmpty())
+                    adj[Integer.parseInt(dummy[0])] = new ArrayList<>();
                 adj[Integer.parseInt(dummy[0])].add(ed);
             }
-            if(i<e){
+            if (i < e) {
                 throw new RuntimeErrorException(new Error());
             }
-
-        } catch(FileNotFoundException exception)
-        {
+            br.close();
+        } catch (FileNotFoundException exception) {
             System.out.println("The file " + file.getPath() + " was not found.");
             throw new RuntimeErrorException(new Error());
-        }catch (Exception e) {
+        } catch (Exception e) {
             throw new RuntimeErrorException(new Error());
         }
 
@@ -78,7 +76,7 @@ public class Graph implements IGraph {
 
         for (ArrayList<edge> anAdj : adj) {
             if (anAdj.size() > 0)
-                count+=anAdj.size();
+                count += anAdj.size();
         }
         return count;
     }
@@ -89,7 +87,7 @@ public class Graph implements IGraph {
         for (int i = 0; i < adj.length; i++) {
 
 
-                a.add(i);
+            a.add(i);
         }
         return a;
     }
@@ -109,7 +107,7 @@ public class Graph implements IGraph {
         Boolean sptSet[] = new Boolean[v];
 
         for (int i = 0; i < v; i++) {
-            distances[i] = Integer.MAX_VALUE/2;
+            distances[i] = Integer.MAX_VALUE / 2;
             sptSet[i] = false;
         }
 
@@ -156,10 +154,10 @@ public class Graph implements IGraph {
 
     @Override
     public boolean runBellmanFord(int src, int[] distances) {
-     //   java.util.Arrays.fill(distances, Integer.MAX_VALUE);
+        //   java.util.Arrays.fill(distances, Integer.MAX_VALUE);
 
         for (int i = 0; i < distances.length; i++) {
-            distances[i] = Integer.MAX_VALUE/2;
+            distances[i] = Integer.MAX_VALUE / 2;
         }
         distances[src] = 0;
         for (int i = 0; i < v - 1; i++)
@@ -173,8 +171,6 @@ public class Graph implements IGraph {
                 for (int iii = 0; iii < adj[ii].size(); iii++)
                     if (distances[ii] + adj[ii].get(iii).cost < distances[adj[ii].get(iii).to])
                         return false;
-
-
 
         return true;
     }
