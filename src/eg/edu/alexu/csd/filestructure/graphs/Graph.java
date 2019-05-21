@@ -21,7 +21,7 @@ public class Graph implements IGraph {
         }
     }
 
-    private ArrayList<edge>[] adj;
+    private ArrayList<ArrayList<edge>> adj;
     private int v, e;
     private ArrayList<Integer> djk;
 
@@ -36,9 +36,9 @@ public class Graph implements IGraph {
             dummy = br.readLine().split(" ");
             v = Integer.parseInt(dummy[0]);
             e = Integer.parseInt(dummy[1]);
-            adj = new ArrayList[v];
+            adj = new ArrayList<>(v);
             for (int i = 0; i < v; i++) {
-                adj[i] = new ArrayList<>();
+                adj.add(new ArrayList<>());
             }
             String s;
             int i;
@@ -52,9 +52,9 @@ public class Graph implements IGraph {
                 }
                 dummy = s.split(" ");
                 edge ed = new edge(Integer.parseInt(dummy[1]), Integer.parseInt(dummy[2]));
-                if (adj[Integer.parseInt(dummy[0])].isEmpty())
-                    adj[Integer.parseInt(dummy[0])] = new ArrayList<>();
-                adj[Integer.parseInt(dummy[0])].add(ed);
+                if (adj.get(Integer.parseInt(dummy[0])).isEmpty())
+                    adj.set(Integer.parseInt(dummy[0]), new ArrayList<>());
+                adj.get(Integer.parseInt(dummy[0])).add(ed);
             }
             if (i < e) {
                 throw new RuntimeErrorException(new Error());
@@ -83,10 +83,8 @@ public class Graph implements IGraph {
 
     @Override
     public ArrayList<Integer> getVertices() {
-        ArrayList<Integer> a = new ArrayList<>(adj.length);
-        for (int i = 0; i < adj.length; i++) {
-
-
+        ArrayList<Integer> a = new ArrayList<>(adj.size());
+        for (int i = 0; i < adj.size(); i++) {
             a.add(i);
         }
         return a;
@@ -94,9 +92,9 @@ public class Graph implements IGraph {
 
     @Override
     public ArrayList<Integer> getNeighbors(int v) {
-        ArrayList<Integer> a = new ArrayList<>(adj[v].size());
-        for (int i = 0; i < adj[v].size(); i++) {
-            a.add(adj[v].get(i).to);
+        ArrayList<Integer> a = new ArrayList<>(adj.get(v).size());
+        for (int i = 0; i < adj.get(v).size(); i++) {
+            a.add(adj.get(v).get(i).to);
         }
         return a;
     }
@@ -128,7 +126,7 @@ public class Graph implements IGraph {
     }
 
     private int findEdge(int u, int v) {
-        for (edge e : adj[u]) {
+        for (edge e : adj.get(u)) {
             if (e.to == v) return e.cost;
         }
         return 0;
@@ -161,15 +159,15 @@ public class Graph implements IGraph {
         }
         distances[src] = 0;
         for (int i = 0; i < v - 1; i++)
-            for (int ii = 0; ii < adj.length; ii++)
-                for (int iii = 0; iii < adj[ii].size(); iii++)
-                    if (distances[ii] + adj[ii].get(iii).cost < distances[adj[ii].get(iii).to])
-                        distances[adj[ii].get(iii).to] = distances[ii] + adj[ii].get(iii).cost;
+            for (int ii = 0; ii < adj.size(); ii++)
+                for (int iii = 0; iii < adj.get(ii).size(); iii++)
+                    if (distances[ii] + adj.get(ii).get(iii).cost < distances[adj.get(ii).get(iii).to])
+                        distances[adj.get(ii).get(iii).to] = distances[ii] + adj.get(ii).get(iii).cost;
 
         for (int i = 0; i < v - 1; i++)
-            for (int ii = 0; ii < adj.length; ii++)
-                for (int iii = 0; iii < adj[ii].size(); iii++)
-                    if (distances[ii] + adj[ii].get(iii).cost < distances[adj[ii].get(iii).to])
+            for (int ii = 0; ii < adj.size(); ii++)
+                for (int iii = 0; iii < adj.get(ii).size(); iii++)
+                    if (distances[ii] + adj.get(ii).get(iii).cost < distances[adj.get(ii).get(iii).to])
                         return false;
 
         return true;
